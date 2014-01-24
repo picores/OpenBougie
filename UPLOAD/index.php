@@ -8,6 +8,7 @@
  *   ========================================
  *   Support: WebMaster@boi.org.cn
  */
+define('IN_BOPBG', TRUE) or die ( 'Access Denied.' );
 
 if (! file_exists(dirname(__FILE__) . '/system/config/database.php') AND ! file_exists(dirname(__FILE__) . '/system/config/install.lock.php') AND !defined('SAE_TMP_PATH'))
 {
@@ -15,6 +16,9 @@ if (! file_exists(dirname(__FILE__) . '/system/config/database.php') AND ! file_
 	exit;
 }
 
-include('system/system.php');
+define ( 'PICORES', dirname ( __FILE__ ) . '/system' );
+define ( 'PICINSTALL', dirname ( __FILE__ ) . '/install' );
+
+include(PICORES . '/system.php');
 
 BOP_APP::run();
