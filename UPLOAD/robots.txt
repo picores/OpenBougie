@@ -1,0 +1,1 @@
+## robots.txt for OpenBougie#User-agent: *Disallow: /app/Disallow: /cache/Disallow: /install/Disallow: /public/Disallow: /system/Disallow: /themes/Disallow: /tmp/Disallow: /?/admin/
